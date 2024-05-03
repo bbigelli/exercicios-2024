@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios ts</title>
+    <link rel="stylesheet" href="style.css"> <!-- Adicione esta linha -->
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>SLACA 2019</h2>
+            <ul>
+                <li><a href="#">Apresentação</a></li>
+                <li><a href="#">Cometês</a></li>
+                <li><a href="#">Autores</a></li>
+                <li><a href="#">Eixos Temáticos</a></li>
+                <li><a href="#">Trabalhos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h1>
+            <div class="video-container">
+                <video width="640" height="360" controls>
+                    <source src="caminho/do/seu/video.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+            <div class="summary-container" onclick="toggleSummary()">
+                <div class="summary-title">RESUMO</div>
+                <div class="summary-text">
+                    <p>O texto está escrito aqui</p>
+                    <p>mais um pouco de texto aqui</p>
+                    <p>mais texto aqui</p>
+                    <p>estou escondido mas estou aqui sou parte do texto</p>
+                    <p>finalzinho do texto.</p>
+                </div>
+            </div>
+            <div class="discussion-box">
+                <div class="discussion-title">Discussões</div>
+                <div class="discussion-subtitle">Compartilhe</div>
+                <div class="discussion-images">
+                    <img src="imagem1.jpg" alt="Imagem 1">
+                    <img src="imagem2.jpg" alt="Imagem 2">
+                    <img src="imagem3.jpg" alt="Imagem 3">
+                </div>
+                <button class="create-topic-button">+ Criar Tópico</button>
+                <div class="topic">
+                    <h3>Tópico 1</h3>
+                    <p>Temos algum conteúdo neste tópico.</p>
+                    <p>Segunda linha dele</p>
+                    <p>Terceira e última linha.</p>
+                </div>
+                <div class="expandable-topic" onclick="toggleTopic()">
+                    <h3>Tópico 2</h3>
+                        <p>Aqui já temos um conteúdo maior</p>
+                        <p>Segunda linha</p>
+                        <p>Terceira linha</p>
+                        <p>quarta linha</p>
+                        <p>Quinta linha</p>
+                        <p>Ufa última linha!</p>
+                    </div>                    
+                </div>
+                <div class="footer">
+                    <div class="brand">Galoá
+                        <p>- anais e proceedings -</p>
+                        <button class="button">Saiba Mais</button>
+                    </div>
+                    <div class="footer-text">Preservar a memória do evento e ampliar o acesso ao conmhecimento científico gerado em eventos é a razão de ser da plataforma Galoá Preceedins.
+                        
+                        <p>Os trabalhos piublicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica, mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script>
+        function toggleSummary() {
+            var summaryText = document.querySelector('.summary-text');
+            summaryText.classList.toggle('expanded');
+        }
+    
+        function toggleTopic() {
+            var topic = document.querySelector('.expandable-topic');
+            topic.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>

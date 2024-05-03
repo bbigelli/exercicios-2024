@@ -1,0 +1,140 @@
+/* Estilos gerais */
+
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    color: #fda32c;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilos da caixa de resumo expansível */
+
+.summary-container {
+    border: 1px solid #ccc;
+    max-width: 400px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.summary-title {
+    font-weight: bold;
+}
+
+.summary-text {
+    overflow: hidden;
+    max-height: 100px; /* Defina a altura máxima que você deseja mostrar inicialmente */
+    transition: max-height 0.3s ease;
+}
+
+.summary-text.expanded {
+    max-height: none; /* Mostra todo o texto quando expandido */
+}
+
+/* Estilos da caixa de discussões */
+
+.discussion-box {
+    border: 1px solid #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;                        
+}
+
+.discussion-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.discussion-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.discussion-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.discussion-images img {
+    width: 100px;
+    margin: 0 10px;
+}
+
+.create-topic-button {
+    background-color: #fda32c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}    
+
+.expandable-topic {
+    max-height: 100px; /* Altura máxima inicial */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.expandable-topic.expanded {
+    max-height: none; /* Exibe todo o conteúdo quando expandido */
+}
+
+/* Estilos do rodapé */
+
+.footer {
+    background-color: #f4f4f4;
+    padding: 16px;
+    max-width: 600px;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.footer-text {
+    font-size: 14px;
+    font-weight: bold;
+}
